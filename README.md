@@ -10,7 +10,7 @@ Goto the project folder and install required dependencies:
 npm install
 ```
 
-And run Webpack to watch for code changes and bundle js and scss files:
+Run Webpack to watch for code changes:
 ```
 webpack
 ```
@@ -21,8 +21,14 @@ For production build:
 webpack -p
 ```
 
-Now open **index.html** in your browser to view the live page.
+install http-server npm package to open static file:
 
+```
+npm install http-server -g
+```
 
+then run in root of file:
 
-* I used localhost of my Wamp server to run this app, you can even use [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) to  create a handy *http* server or any other of your choice.
+```
+http-server
+```

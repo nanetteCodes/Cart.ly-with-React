@@ -1,12 +1,17 @@
 # Cart.ly
+
 an ecommerce site built with React
 
-View live on [Github](http://nanettejulius.com/Cart.ly-with-React/)
+### View live on [Github](http://nanettejulius.com/Cart.ly-with-React/)
+
+_Technologies: React.js, ES6, Webpack, Gulp, Sass_
 
 
-## Setup
+## Steps
 
-Goto the project folder and install required dependencies:
+-----------
+
+Go to project root and install required dependencies:
 ```
 npm install
 ```
@@ -33,4 +38,4 @@ then run in root of file:
 ```
 http-server
 ```
-### now open http://127.0.0.1:8080.
+### now open http://127.0.0.1:8080 to view.

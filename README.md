@@ -6,6 +6,7 @@ an ecommerce site built with React
 
 _Technologies: React.js, ES6, Webpack, Gulp, Sass_
 
+![cartlyscreenshot](https://user-images.githubusercontent.com/28736699/36051515-3ef372a6-0d9f-11e8-847f-c9465908ac8f.png)
 
 ## Steps
 

@@ -1,10 +1,10 @@
 # Cart.ly
 
-an ecommerce site built with React
-
 ### View live on [Github](http://nanettejulius.com/Cart.ly-with-React/)
 
-_Technologies: React.js, ES6, Webpack, Gulp, Sass_
+Cart.ly is the client side of an ecommerce site built with React.
+
+_Technologies: React.js, ES6, Webpack, Sass_
 
 ![cartlyscreenshot](https://user-images.githubusercontent.com/28736699/36051515-3ef372a6-0d9f-11e8-847f-c9465908ac8f.png)
 

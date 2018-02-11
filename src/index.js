@@ -17,14 +17,12 @@ class App extends Component{
 			totalItems: 0,
 			totalAmount: 0,
 			term: '',
-			category: '',
+			// category: '',
 			cartBounce: false,
 			quantity : 1,
 			quickViewProduct: {},
 			modalActive: false
 		};
-		this.handleSearch = this.handleSearch.bind(this);
-		this.handleMobileSearch = this.handleMobileSearch.bind(this);
 		this.handleCategory = this.handleCategory.bind(this);
 		this.handleAddToCart = this.handleAddToCart.bind(this);
 		this.sumTotalItems = this.sumTotalItems.bind(this);
@@ -50,18 +48,10 @@ class App extends Component{
 		this.getProducts();
 	}
 
-	// Search by Keyword
-	handleSearch(event){
-		this.setState({term: event.target.value});
-	}
-	// Mobile Search Reset
-	handleMobileSearch(){
-		this.setState({term: ""});
-	}
+
 	// Filter by Category
 	handleCategory(event){
 		this.setState({category: event.target.value});
-		console.log(this.state.category);
 	}
 	// Add to Cart
 	handleAddToCart(selectedProducts){
@@ -69,7 +59,6 @@ class App extends Component{
 		let productID = selectedProducts.id;
 		let productQty = selectedProducts.quantity;
 		if(this.checkProduct(productID)){
-			console.log('hi');
 			let index = cartItem.findIndex((x => x.id == productID));
 			cartItem[index].quantity = Number(cartItem[index].quantity) + Number(productQty);
 			this.setState({
@@ -87,8 +76,8 @@ class App extends Component{
 				cartBounce:false,
 				quantity: 1
 			});
-			console.log(this.state.quantity);
-			console.log(this.state.cart);
+			// console.log(this.state.quantity);
+			// console.log(this.state.cart);
     }.bind(this),1000);
 		this.sumTotalItems(this.state.cart);
 		this.sumTotalAmount(this.state.cart);
@@ -159,8 +148,6 @@ class App extends Component{
 					totalItems={this.state.totalItems}
 					cartItems={this.state.cart}
 					removeProduct={this.handleRemoveProduct}
-					handleSearch={this.handleSearch}
-					handleMobileSearch={this.handleMobileSearch}
 					handleCategory={this.handleCategory}
 					categoryTerm={this.state.category}
 					updateQuantity={this.updateQuantity}

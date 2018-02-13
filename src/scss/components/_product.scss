@@ -64,7 +64,7 @@
     .decrement{
         height: 24px;
         width: 24px;
-        border: 1px solid $gray-eighty;
+        border: 1px solid $gray-darker;
         text-align: center;
         box-sizing: border-box;
         border-radius: 50%;
@@ -90,7 +90,7 @@
         text-align: center;
         margin: 0 12px;
         border-radius: 2px;
-        border: 1px solid $gray-eighty;
+        border: 1px solid $gray-darker;
         &:focus{
             outline: none;
             border-color: $main-blue;

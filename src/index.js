@@ -1,3 +1,4 @@
+const roundTo = require('round-to');
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
@@ -111,7 +112,8 @@ class App extends Component{
         let total = 0;
         let cart = this.state.cart;
         for (var i=0; i<cart.length; i++) {
-            total += cart[i].price * parseInt(cart[i].quantity);
+					var num = cart[i].price;
+            total += num.toFixed(2) * parseInt(cart[i].quantity);
         }
 		this.setState({
 			totalAmount: total

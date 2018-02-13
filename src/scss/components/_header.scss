@@ -122,7 +122,7 @@ header {
 .cart-preview {
   display: none;
   background: $white;
-  border: 1px solid $gray-eighty;
+  border: 1px solid $gray-darker;
 
   &:before {
     content: "";
@@ -134,7 +134,7 @@ header {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid $gray-eighty;
+    border-bottom: 8px solid $gray-darker;
     z-index: 1;
   }
 
@@ -287,16 +287,16 @@ header {
     line-height: 24px;
     width: 24px;
     font-size: 22px;
-    color: $gray-eighty;
+    color: $gray-darker;
     text-align: center;
 
     &:hover {
-      color: $red;
+      color: $black;
     }
   }
 
   &:hover {
-    background: $green-light-bg;
+    background: $light-blue;
   }
 }
 @keyframes tada {

@@ -1,6 +1,6 @@
 # Cart.ly
 
-### View live on [Github](http://nanettejulius.com/Cart.ly-with-React/)
+### View live on [Github](http://nanettecodes.github.io/Cart.ly-with-React/)
 
 Cart.ly is the client side of an ecommerce site built with React.
 
